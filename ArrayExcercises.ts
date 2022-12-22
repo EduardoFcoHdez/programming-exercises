@@ -3,4 +3,10 @@ const adultArray = array.filter(number =>  number > 18);
 const youngArray = array.slice(2);
 const oldArray = array.find(number => number >= 100)
 const yearsLeftToBeOldArray = array.map(number => 100 - number);
-console.log(yearsLeftToBeOldArray); 
+
+const yearsSum = array.reduce((accumulator, currentValue) => {
+    accumulator += currentValue;
+    return accumulator;
+});
+
+console.log('yearsSum', yearsSum); 
